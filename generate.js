@@ -33,10 +33,11 @@ function generate(files, target) {
 
         console.info("process " + filename + filetype);
 
-        resizeAndSave(1/3, file, target + filename + filetype);
-        resizeAndSave(1/2, file, target + filename + '@1.5x' + filetype);
-        resizeAndSave(2/3, file, target + filename + '@2x' + filetype);
-        resizeAndSave(1, file, target + filename + '@3x' + filetype);
+        resizeAndSave(1/4, file, target + filename + filetype);
+        resizeAndSave(1.5/4, file, target + filename + '@1.5x' + filetype);
+        resizeAndSave(1/2, file, target + filename + '@2x' + filetype);
+        resizeAndSave(3/4, file, target + filename + '@3x' + filetype);
+        resizeAndSave(1, file, target + filename + '@4x' + filetype);
     }
 }
 
